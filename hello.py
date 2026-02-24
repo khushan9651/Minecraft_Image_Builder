@@ -16,6 +16,8 @@ def demonstrate_numpy():
     matrix=np.array([[1, 2, 3], [4, 5, 6]])
     print(f"\nMatrix:\n{matrix}")
     print(f"Matrix shape: {matrix.shape}")
+def farewell(name):
+    return f"Goodbye, {name}! Keep coding!"
 
 def main():
     print("===Python with NumPy===")
@@ -28,6 +30,9 @@ def main():
     num1=float(input("Enter first number:"))
     num2=float(input("Enter second number:"))
     print(f"{num1}+{num2}={num1+num2}")
+
+    #New farewell message
+    print(f"\n{farewell(user_name)}")
 
 if __name__=="__main__":
     main()
